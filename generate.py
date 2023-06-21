@@ -1,6 +1,8 @@
 # main generation
 import stars as st
 import random
+from ursina.prefabs.first_person_controller import FirstPersonController
+from ursina.scripts.noclip_mode import *
 
 # this relies on the Ursina Game Engine (library)
 
@@ -45,6 +47,8 @@ def main():
     print('Main')
     st.window.color = st.color.black
     generate_stars(300, 50, 800)
+    #camera=Entity()
+    #camera.add_script(FirstPersonController())
     app.run()
 
 if __name__ == '__main__':
